@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,500;1,600;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <title>Portfolio</title>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <a href="#" class="logo">DEVENM
+
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+
+        </a>
+        <div class="navliv">
+            <ul>
+                <li><a href="#" class="ini">Inicio</a></li>
+                <li><a href="#">Sobre mim </a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Projectos</a></li>
+                <li><a href="#">Marketing</a></li>
+
+            </ul>
+
+        </div>
+        <img src="menu-btn.png" alt="Portfolio" class="BTU">
+
+
+
+    </nav>
+
+
+
+    <header></header>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".BTU")
+    const navLinks = document.querySelector(".navliv")
+
+    menuHamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+</html>

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    font-family: 'Press Start 2P', 'Orbitron', cursive;
+}
+
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('landscape.jpg');
+    background-size: cover;
+}
+
+.navbar {
+    position: absolute;
+    padding: 45px;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar a {
+    color: white;
+    padding: 0 25px;
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+nav div ul {
+    display: flex;
+}
+
+nav div ul li .ini {
+    color: #ed3c57;
+    font-weight: 600;
+}
+
+.BTU {
+    position: absolute;
+    width: 35px;
+    display: none;
+    top: 58px;
+    right: 50px;
+    transition: 0.2s;
+    cursor: pointer;
+
+
+
+}
+
+.logo:hover {
+    background: #ed3c57;
+    box-shadow: 0 0 10px #ed3c57, 0 0 40px #ed3c57, 0 0 80px #ed3c57;
+    transition-delay: 1s;
+    transition: all 0.9s;
+
+}
+
+
+
+
+
+@media screen and (max-width:1242px) {
+
+    .navbar {
+        padding: 0;
+    }
+
+    div {
+        position: absolute;
+
+        background-color: rgba(187, 187, 187, 0.184);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        opacity: 0.5;
+        transition: opacity 1s ease;
+
+    }
+
+    div:hover {
+        opacity: 1;
+
+    }
+
+    div.mobile-menu {
+        margin-left: 0;
+    }
+
+    div ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .navbar .BTU {
+        display: block;
+
+
+    }
+
+
+    .navbar .logo {
+        position: absolute;
+        top: 50px;
+        font-size: 2em;
+        font-weight: bold;
+        left: 55px;
+    }
+
+    nav div ul li {
+        margin: 20px 0;
+        font-size: 1.5em;
+
+    }
+
+    .BTU:hover {
+        background: #ed3c57;
+        box-shadow: 0 0 10px #ed3c57, 0 0 40px #ed3c57, 0 0 80px #ed3c57;
+        transition-delay: 0.1s;
+        transform: rotate(0deg);
+        transition: all 0.9s;
+    }
+
+    .BTU:hover {
+        transform: rotate(90deg);
+    }
+
+
+
+
+
+}
